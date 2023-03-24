@@ -4,10 +4,12 @@ import "./Search.css";
 export default function Search() {
   return (
     <div className="Search">
-      <input type="search" placeholder="Enter a city.." />
-      <button type="button" class="btn btn-primary">
-        Search
-      </button>
+      <form>
+        <input type="search" placeholder="Enter a city.." />
+        <button type="button" class="btn btn-primary">
+          Search
+        </button>
+      </form>
     </div>
   );
 }
