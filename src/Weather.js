@@ -6,7 +6,7 @@ export default function Weather() {
     <div className="Weather">
       <h1>Toronto</h1>
       <div className="row align-items-center">
-        <div className="col">
+        <div className="col icons">
           <div className="d-flex align-items-center">
             <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"

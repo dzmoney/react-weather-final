@@ -6,8 +6,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Search />
-        <Weather />
+        <div className="border">
+          <Search />
+          <Weather />
+        </div>
         <footer>
           Coded by Deanna Tyndall,{" "}
           <a href="https://github.com/dzmoney/react-weather-final">

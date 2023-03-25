@@ -8,3 +8,9 @@
 .App footer {
   font-size: 13px;
 }
+
+.border {
+  border: 1px solid #bdc1c5;
+  border-radius: 4px;
+  padding: 7px;
+}
