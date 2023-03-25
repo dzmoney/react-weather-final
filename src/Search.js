@@ -6,7 +6,7 @@ export default function Search() {
     <div className="Search">
       <form>
         <input type="search" placeholder="Enter a city.." />
-        <button type="button" class="btn btn-primary">
+        <button type="button" className="btn btn-primary">
           Search
         </button>
       </form>

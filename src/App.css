@@ -1,4 +1,10 @@
 .App {
   color: #e6e9ec;
-  padding: 20px;
+  padding: 40px;
+  width: 700px;
+  margin-left: 100px;
+}
+
+.App footer {
+  font-size: 13px;
 }
