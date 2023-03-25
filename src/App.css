@@ -1,8 +1,8 @@
 .App {
   color: #e6e9ec;
   padding: 40px;
-  width: 700px;
-  margin-left: 100px;
+  max-width: 700px;
+  margin-left: 80px;
 }
 
 .App footer {
