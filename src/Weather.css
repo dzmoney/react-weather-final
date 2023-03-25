@@ -10,8 +10,14 @@
   padding: 0;
 }
 
-.degree {
+.degree-value {
   font-size: 48px;
+}
+
+.degree-type {
+  font-size: 13px;
+  position: relative;
+  top: -13px;
 }
 
 .stats {

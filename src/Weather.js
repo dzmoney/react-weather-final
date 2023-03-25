@@ -12,7 +12,8 @@ export default function Weather() {
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
               alt="image"
             />
-            <p className="degree">6°</p>
+            <p className="degree-value">6</p>
+            <p className="degree-type">°C | °F</p>
           </div>
         </div>
         <div className="col stats">
