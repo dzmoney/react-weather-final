@@ -22,6 +22,12 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
+        <form>
+          <input type="search" placeholder="Enter a city.." autoFocus="on" />
+          <button type="button" className="btn btn-primary">
+            Search
+          </button>
+        </form>
         <WeatherData data={weatherData} />
       </div>
     );
