@@ -12,6 +12,10 @@ export default function App() {
           Coded by Deanna Tyndall,{" "}
           <a href="https://github.com/dzmoney/react-weather-final">
             open-sourced
+          </a>{" "}
+          and{" "}
+          <a href="https://comfy-tartufo-8a3ffb.netlify.app/">
+            pusblished on Netlify
           </a>
         </footer>
       </div>
