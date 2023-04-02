@@ -9,7 +9,7 @@ export default function WeatherData(props) {
       <div className="row align-items-center">
         <div className="col icons">
           <div className="d-flex align-items-center">
-            <img src={props.data.icon} alt="image" />
+            <img src={props.data.icon} alt="" />
             <TempDisplay celsius={props.data.temp} />
           </div>
         </div>
