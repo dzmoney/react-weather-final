@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import TempDisplay from "./TempDisplay";
 
 export default function WeatherData(props) {
   return (
@@ -9,8 +10,7 @@ export default function WeatherData(props) {
         <div className="col icons">
           <div className="d-flex align-items-center">
             <img src={props.data.icon} alt="image" />
-            <p className="degree-value">{Math.round(props.data.temp)}</p>
-            <p className="degree-type">°C | °F</p>
+            <TempDisplay celsius={props.data.temp} />
           </div>
         </div>
         <div className="col stats">

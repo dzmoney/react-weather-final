@@ -1,0 +1,9 @@
+.degree-value,
+.degree-type {
+  display: inline;
+}
+
+.degree-type {
+  position: relative;
+  top: -25px;
+}
