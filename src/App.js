@@ -10,11 +10,14 @@ export default function App() {
         </div>
         <footer>
           Coded by Deanna Tyndall,{" "}
-          <a href="https://github.com/dzmoney/react-weather-final">
+          <a
+            href="https://github.com/dzmoney/react-weather-final"
+            target="_blank"
+          >
             open-sourced
           </a>{" "}
           and{" "}
-          <a href="https://comfy-tartufo-8a3ffb.netlify.app/">
+          <a href="https://comfy-tartufo-8a3ffb.netlify.app/" target="_blank">
             pusblished on Netlify
           </a>
         </footer>
