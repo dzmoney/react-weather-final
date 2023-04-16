@@ -17,7 +17,7 @@ export default function App() {
             open-sourced
           </a>{" "}
           and{" "}
-          <a href="https://comfy-tartufo-8a3ffb.netlify.app/" target="_blank">
+          <a href="https://dulcet-truffle-570cbb.netlify.app" target="_blank">
             pusblished on Netlify
           </a>
         </footer>
