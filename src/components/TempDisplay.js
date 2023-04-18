@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./TempDisplay.css";
+import { DegreeTypeContext } from "../context/DegreeTypeContext";
 
 export default function TempDisplay(props) {
-  const [unit, setUnit] = useState("celsius");
-
   function showCelsius(event) {
     event.preventDefault();
-    setUnit("celsius");
+    setDegreeType("celsius");
   }
 
   function showFahrenheit(event) {
     event.preventDefault();
-    setUnit("fahrenheit");
+    setDegreeType("fahrenheit");
   }
 
-  if (unit === "celsius") {
+  const { degreeType } = useContext(DegreeTypeContext);
+  const { setDegreeType } = useContext(DegreeTypeContext);
+
+  if (degreeType === "celsius") {
     return (
       <div className="TempDisplay">
         <p className="degree-value">{Math.round(props.celsius)}</p>

@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DegreeTypeContext } from "../context/DegreeTypeContext";
 
 export default function ForecastDay(props) {
+  const { degreeType } = useContext(DegreeTypeContext);
+
   function maxTemp() {
     let temp = Math.round(props.data.temperature.maximum);
-    return `${temp}°`;
+    if (degreeType === "fahrenheit") {
+      temp = (temp * 9) / 5 + 32;
+    }
+    return `${Math.round(temp)}°`;
   }
 
   function minTemp() {
     let temp = Math.round(props.data.temperature.minimum);
-    return `${temp}°`;
+    if (degreeType === "fahrenheit") {
+      temp = (temp * 9) / 5 + 32;
+    }
+    return `${Math.round(temp)}°`;
   }
 
   function day() {
