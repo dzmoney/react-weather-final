@@ -1,4 +1,5 @@
 import "./App.css";
+import ToggleSwitch from "./components/ToggleSwitch";
 import Weather from "./components/Weather";
 import { DegreeTypeProvider } from "./context/DegreeTypeContext";
 
@@ -7,6 +8,7 @@ export default function App() {
     <DegreeTypeProvider>
       <div className="App">
         <div className="container">
+          <ToggleSwitch />
           <div className="border">
             <Weather defaultCity="San Francisco" />
           </div>
