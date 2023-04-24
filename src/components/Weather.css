@@ -39,6 +39,7 @@
 
 .WeatherData .date {
   font-size: 22px !important;
+  white-space: nowrap;
 }
 
 .Weather input {
