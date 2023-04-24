@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./ToggleSwitch.css";
 
-const ToggleSwitch = () => {
-  const [isChecked, setIsChecked] = useState("false");
+const ToggleSwitch = ({ isChecked, HandleToggleSwitch }) => {
+  const [checked, setChecked] = useState(isChecked);
 
   // Event handler function for when the toggle switch is clicked
-  const HandleToggleSwitch = () => {
-    setIsChecked(!isChecked);
+  const toggleChecked = () => {
+    setChecked(!checked);
+    HandleToggleSwitch();
     //!isChecked will toggle between true and false states each time it is clicked
   };
 
@@ -15,8 +16,8 @@ const ToggleSwitch = () => {
       <input
         type="checkbox"
         id="toggle-switch"
-        checked={isChecked}
-        onChange={HandleToggleSwitch}
+        checked={checked}
+        onChange={toggleChecked}
       />
       <label htmlFor="toggle-switch"></label>
     </div>

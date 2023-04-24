@@ -1,14 +1,24 @@
+import React, { useState } from "react";
 import "./App.css";
 import ToggleSwitch from "./components/ToggleSwitch";
 import Weather from "./components/Weather";
 import { DegreeTypeProvider } from "./context/DegreeTypeContext";
 
 export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const HandleToggleSwitch = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <DegreeTypeProvider>
-      <div className="App">
+      <div className={`App ${isDarkMode ? "App--dark" : "App--light"}`}>
         <div className="container">
-          <ToggleSwitch />
+          <ToggleSwitch
+            isChecked={isDarkMode}
+            HandleToggleSwitch={HandleToggleSwitch}
+          />
           <div className="border">
             <Weather defaultCity="San Francisco" />
           </div>

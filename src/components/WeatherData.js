@@ -19,10 +19,9 @@ export default function WeatherData(props) {
             <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>
         </div>
-        <div className="col date">
+        <div className="col date-description">
           <ul>
-            <li className="date-header">Weather</li>
-            <li>
+            <li className="date">
               <FormattedDate date={props.data.date} />
             </li>
             <li className="text-capitalize">{props.data.description}</li>

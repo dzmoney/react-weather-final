@@ -1,8 +1,21 @@
 .App {
-  color: #e6e9ec;
+  min-height: 100%;
+}
+
+.container {
   padding: 40px;
   max-width: 700px;
-  margin-left: 80px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App--dark {
+  background-color: #202124;
+  color: #e6e9ec;
+}
+.App--light {
+  background-color: #fff;
+  color: #202124;
 }
 
 .App footer {
@@ -10,7 +23,9 @@
 }
 
 .border {
-  border: 1px solid #bdc1c5;
+  border: 1.5px solid #7f8488 !important;
   border-radius: 4px;
   padding: 6px;
+  width: 100%;
+  max-width: 700px;
 }
