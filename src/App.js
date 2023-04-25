@@ -33,7 +33,7 @@ export default function App() {
             </a>{" "}
             and{" "}
             <a
-              href="https://dulcet-truffle-570cbb.netlify.app"
+              href="https://fanciful-chebakia-dc113e.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
